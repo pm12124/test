@@ -1,0 +1,28 @@
+# where our app is hosted on the internets
+#appbase = http://wdx5cd93526br.jdnet.deere.com:8080/mbdviewer
+appbase = https://d22e7lrh6txr4g.cloudfront.net/app-update
+
+# the jar file that contains our code
+code = MBDViewer.jar
+
+resource = mbd-splash.jpg
+resource = MBDViewer-launcher-new.jar
+
+# the main entry point of our app
+class = manifest
+
+# we pass the appdir to our app so that it can upgrade getdown test1
+apparg = %APPDIR%
+
+allow_offline = true
+
+# UI Configuration
+ui.name = MBD Viewer
+
+ui.background_image = mbd-splash.jpg
+ui.progress = 10, 45, 390, 22
+ui.progress_bar = 367c2b
+ui.progress_text = FFFFFF
+ui.status = 10, 75, 390, 68
+ui.status_text = 000000
+ui.hide_decorations = true
